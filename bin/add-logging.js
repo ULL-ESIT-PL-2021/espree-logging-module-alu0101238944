@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * Universidad de La Laguna
  * Escuela Superior de Ingeniería y Tecnología
