@@ -1,6 +1,6 @@
 {
   "name": "@alu0101238944/addlogging",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "J. Daniel Escánez <alu0101238944@ull.edu.es>",
   "scripts": {
     "sh": "node --inspect-brk syntax-highlight.js",
