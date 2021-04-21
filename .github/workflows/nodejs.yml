@@ -27,8 +27,8 @@ jobs: # jobs are made of steps
     # Install a project with a clean slate
     - run: npm ci
     - run: npm test
-    - run: npm mocha
-    - run: npm mocha-cat
+    - run: npm run mocha
+    - run: npm run mocha-cat
       # Environment variables
       env:
         CI: true
