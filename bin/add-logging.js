@@ -7,7 +7,7 @@
  * @author J. Daniel Escánez
  */
 
-const {addLogging} = require('./addLogging.js');
+const {addLogging} = require('../src/add-logging.js');
 const fs = require('fs');
 const program = require('commander');
 const {version, description} = require('../package.json');

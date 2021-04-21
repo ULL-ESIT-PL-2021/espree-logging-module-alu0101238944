@@ -10,7 +10,7 @@
 'use strict';
 
 const {expect} = require('chai');
-const {addLogging} = require('../src/addLogging.js');
+const {addLogging} = require('../src/add-logging.js');
 
 describe('main tests', () => {
   const emptyArrowFunction = `() => {}`;
