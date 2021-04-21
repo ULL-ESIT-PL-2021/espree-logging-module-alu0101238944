@@ -13,13 +13,13 @@ A function to insert console.logs at the beginning of arrow functions, function 
 ## Installation
 
 ```bash
-$ npm install @ull-esit-pl-2021/addlogging --save
+$ npm install @alu0101238944/addlogging --save
 ```
 
 ## Usage
 
 ```js
-const addLogging = require('@ull-esit-pl-2021/addlogging');
+const addLogging = require('@alu0101238944/addlogging');
 console.log(addLogging('(x) => { x + 1; }'));
 ```
 
