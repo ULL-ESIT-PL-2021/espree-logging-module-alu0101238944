@@ -35,8 +35,17 @@ describe('main tests', () => {
       expect(addLogging(emptyArrowFunction))
           .to.be.equal('() => {\n    console.log(`Entering <anonymous function>() at line 1`);\n};')
     });
-    it('Función ejemplo README.md', () => {
+    it('Función ejemplo README.md sin pattern', () => {
       expect(addLogging(arrowFunction))
+          .to.be.equal('const arrowFunctionExpression = x => {\n    console.log(' +
+          '`Entering <anonymous function>(${ x }) at line 1`);\n    return x + 1;\n};')
+    });
+    it('Función ejemplo README.md sin pasarle el pattern correcto', () => {
+      expect(addLogging(arrowFunction, 'FunctionDeclaration'))
+          .to.be.equal('const arrowFunctionExpression = x => {\n    return x + 1;\n};')
+    });
+    it('Función ejemplo README.md pasandole el pattern correcto', () => {
+      expect(addLogging(arrowFunction, 'ArrowFunctionExpression'))
           .to.be.equal('const arrowFunctionExpression = x => {\n    console.log(' +
           '`Entering <anonymous function>(${ x }) at line 1`);\n    return x + 1;\n};')
     });

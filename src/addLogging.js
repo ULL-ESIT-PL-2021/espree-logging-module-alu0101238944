@@ -19,7 +19,7 @@ module.exports = {
    * @param {string} code
    * @return El código del arbol generado
    */
-  addLogging: function(code) {
+  addLogging: function(code, pattern) {
     const ast = espree.parse(code, {ecmaVersion: espree.latestEcmaVersion, loc: true});
     estraverse.traverse(ast, {
       enter: function(node, parent) {
@@ -28,7 +28,7 @@ module.exports = {
           case 'FunctionDeclaration':
           case 'FunctionExpression':
           case 'ArrowFunctionExpression':
-            addBeforeCode(node);
+            if (!pattern || pattern === node.type) addBeforeCode(node);
         }
       }
     });

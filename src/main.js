@@ -20,7 +20,8 @@ function main() {
     .version(version)
     .description(description)
     .usage('[options] <filename> [...]')
-    .option('-o, --output <filename>', 'establecer el fichero de salida del resultado del programa');
+    .option('-o, --output <filename>', 'establecer el fichero de salida del resultado del programa')
+    .option('-p, --pattern <functionNamePattern>', 'establecer el fichero de salida del resultado del programa');
 
   program.parse(process.argv);
   // options contiene las opciones del programa
@@ -40,7 +41,7 @@ function main() {
         // Si hay error se envía un throw
         if (err) throw `Error reading '${inputFilename}': ${err}`;
         // eoc se llama al addLoggin y se guarda en output
-        const output = addLogging(input);
+        const output = addLogging(input, options.pattern);
         // Se muesta la cadena de entrada al programador
         console.error(`input:\n${input}\n---`);
         // Si se ha indicado un fichero de salida en la línea de comandos
