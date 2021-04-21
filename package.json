@@ -9,13 +9,9 @@
     "solution": "node ./p0-t0-esprima-logging-sol.js input.js -o out.js && node out.js",
     "publish": "git ci -am modified && git push origin master",
     "private": "git ci -am private && git push private private",
-    "test-1": "node src/addLogging.js test/logging.js -o output/out1.js",
-    "test-2": "node src/addLogging.js test/strain.js -o output/out2.js",
-    "test-3": "node src/addLogging.js test/yacht.js -o output/out3.js",
-    "test": "npm run test-1; npm run test-2; npm run test-3",
     "mocha": "mocha test",
     "mocha-cat": "mocha test -R nyan",
-    "nyc-test": "npx nyc npm run mocha",
+    "test": "npx nyc npm run mocha",
     "validate": "cat codecov.yml | curl --data-binary @- https://codecov.io/validate",
     "report": "nyc --reporter=json mocha",
     "codecov": "curl -s https://codecov.io/bash | bash"
@@ -48,6 +44,7 @@
   },
   "devDependencies": {
     "chai": "^4.3.4",
+    "jsdoc": "^3.6.6",
     "mocha": "^8.3.2",
     "nyc": "^15.1.0"
   },

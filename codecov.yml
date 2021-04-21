@@ -1,7 +1,0 @@
-codecov:
-  token: "d362a7a8-18ec-4342-93d3-3d919beb9a6b"
-  bot: "codecov-io"
-
-parsers:
-  javascript:
-    enable_partials: yes
