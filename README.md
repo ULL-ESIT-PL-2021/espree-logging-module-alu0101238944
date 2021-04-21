@@ -20,7 +20,7 @@ $ npm install @ull-esit-pl-2021/addlogging --save
 
 ```js
 const addLogging = require('@ull-esit-pl-2021/addlogging');
-console.log('addLogging((x) => { x + 1; })');
+console.log(addLogging('(x) => { x + 1; }'));
 ```
 
 ## Tests
