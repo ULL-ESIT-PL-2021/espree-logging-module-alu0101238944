@@ -36,6 +36,10 @@ $ test                # Mocha and chai tests + nyc coverage
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality. Lint and test your code.
 
+# ./docs
+
+All code documentation is available in <https://ull-esit-pl-2021.github.io/espree-logging-module-alu0101238944>
+
 ## Release History
 
 * 0.1.0 Initial release
