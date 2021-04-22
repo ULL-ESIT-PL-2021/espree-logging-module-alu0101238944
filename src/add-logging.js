@@ -5,6 +5,7 @@
  * Procesadores de Lenguajes
  *
  * @author J. Daniel Escánez
+ * @module addlogging
  */
 
 const escodegen = require('escodegen');
