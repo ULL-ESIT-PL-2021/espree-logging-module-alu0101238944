@@ -47,3 +47,4 @@ All code documentation is available in <https://ull-esit-pl-2021.github.io/espre
 * 0.1.2 Attempt 2 to fix bugs in publish
 * 0.1.3 Attempt 3 to fix bugs in publish
 * 0.1.4 Fixing bugs in publish
+* 0.2.0 Pattern can be a RegExp
