@@ -13,7 +13,7 @@ A function to insert console.logs at the beginning of arrow functions, function 
 ## Installation
 
 ```bash
-$ npm install @alu0101238944/addlogging --save
+$ npm install @alu0101238944/addlogging
 ```
 
 ## Usage
@@ -39,3 +39,7 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 ## Release History
 
 * 0.1.0 Initial release
+* 0.1.1 Attempt 1 to fix bugs in publish
+* 0.1.2 Attempt 2 to fix bugs in publish
+* 0.1.3 Attempt 3 to fix bugs in publish
+* 0.1.4 Fixing bugs in publish
