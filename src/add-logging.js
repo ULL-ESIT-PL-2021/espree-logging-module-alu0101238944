@@ -28,7 +28,9 @@ module.exports = {
           case 'FunctionDeclaration':
           case 'FunctionExpression':
           case 'ArrowFunctionExpression':
-            if (!pattern || pattern === node.type) addBeforeCode(node);
+            if (!pattern || pattern === node.type || new RegExp(pattern).test(node.type)) {
+              addBeforeCode(node);
+            }
         }
       }
     });
